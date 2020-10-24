@@ -10,6 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
 
+    void Awake()
+    {
+        Application.targetFrameRate = 30;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
